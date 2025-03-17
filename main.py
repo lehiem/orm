@@ -24,6 +24,16 @@ from db.models import *
 ############################################################################
 """ Replace the code below with your own """
 
+"""
+In case you need to start over. Login to psql and run these commands in order:
+
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+GRANT ALL ON SCHEMA public TO postgres, public;
+
+... then migrate again
+"""
+
 # Seed a few users in the database
 User.objects.create(name='Dan')
 User.objects.create(name='Robert')
