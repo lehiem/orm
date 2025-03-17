@@ -10,7 +10,7 @@ sys.dont_write_bytecode = True
 
 # Import settings
 import os
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'orm.settings')
 
 # setup django environment
 import django
