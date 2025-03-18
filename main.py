@@ -25,13 +25,17 @@ from db.models import *
 """ Replace the code below with your own """
 
 """
-In case you need to start over. Login to psql and run these commands in order:
+In case you need to start over. 
+Note- this will delete any other tables on the public schema.
+Alternatively, you could drop django's tables one-by-one
+
+Login to psql and run these commands in order:
 
 DROP SCHEMA public CASCADE;
 CREATE SCHEMA public;
 GRANT ALL ON SCHEMA public TO postgres, public;
 
-... then migrate again
+... then migrate again, and re-create your superuser
 """
 
 # Seed a few users in the database
