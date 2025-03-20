@@ -20,6 +20,7 @@ STATICFILES_DIRS = [
         BASE_DIR / "static",
 ]
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -28,6 +29,14 @@ DATABASES = {
         'PASSWORD': os.getenv("PGPASSWORD"),
         'HOST': 'dbserver.gctaa.net',
         'PORT': '5432',
+    }
+}
+'''
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / 'db.sqlite3',
     }
 }
 
