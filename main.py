@@ -44,3 +44,5 @@ User.objects.create(name='Robert')
 
 for u in User.objects.all():
     print(f'ID: {u.id} \tUsername: {u.name}')
+
+
